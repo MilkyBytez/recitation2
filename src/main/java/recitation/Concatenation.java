@@ -24,7 +24,9 @@ public class Concatenation {
      * @return a and b written one after the other
      */
     public String joinDigits(int a, int b) {
-        return null;
+        String num1 = String.valueOf(a);
+        String num2 = String.valueOf(b);
+        return num1 + num2; // return String.valueOf(a) + String.valueOf(b)
     }
 
     /**
@@ -39,6 +41,8 @@ public class Concatenation {
      * @return a + b, written as text
      */
     public String sumAsText(int a, int b) {
-        return null;
+        int sum = a + b;
+        String sum1 = String.valueOf(sum);
+        return String.valueOf(sum);
     }
 }
