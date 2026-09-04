@@ -54,6 +54,7 @@ public class Formatting {
      * @return the full sentence, with spice to four decimal places
      */
     public String spiceReport(String name, double spice) {
-        return null;
+        // Notes: %s is for Strings, %d for decimals, %.# for nums BEHIND decimal
+        return String.format("Well %s, the spice value resulted in %.4f", name, spice);
     }
 }
