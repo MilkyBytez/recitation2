@@ -22,22 +22,23 @@ public class Truncation {
      * @return the value with everything after the decimal point removed
      */
     public int chop(double value) {
-        return 0;
+        // Note : forcing int value
+        return (int) value;
     }
 
     /**
      * The nearest whole number.
-     *
+     * <p>
      * roundOff(3.9) is 4.  roundOff(3.1) is 3.
-     *
+     * <p>
      * Math.round hands back a long, which is a bigger type than int, so you
      * still need a cast to get an int out.
      *
      * @param value any decimal number
      * @return the value rounded to the nearest whole number
      */
-    public int roundOff(double value) {
-        return 0;
+    public long roundOff(double value) {
+        return Math.round(value);
     }
 
     /**
@@ -56,6 +57,6 @@ public class Truncation {
      * @return the value truncated to two decimal places
      */
     public double toHundredths(double value) {
-        return 0.0;
+        return value%.2f;
     }
 }

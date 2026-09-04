@@ -41,6 +41,7 @@ public class StringEquality {
      * @return whether they are the same object
      */
     public boolean sameObject(String a, String b) {
+
         return true;
     }
 }
