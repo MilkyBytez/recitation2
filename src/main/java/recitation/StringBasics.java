@@ -30,7 +30,9 @@ public class StringBasics {
      * @return the two initial letters
      */
     public String initials(String first, String last) {
-        return null;
+        String firstChar = String.valueOf(first.charAt(0));
+        String lastChar = String.valueOf(last.charAt(0));
+        return firstChar + lastChar;
     }
 
     /**
@@ -42,7 +44,8 @@ public class StringBasics {
      * @return its final character
      */
     public char lastCharacter(String s) {
-        return ' ';
+        String firstChar = String.valueOf(s.charAt(s.length() - 1));
+        return firstChar.charAt(s.length() - 1);
     }
 
     /**
@@ -57,6 +60,6 @@ public class StringBasics {
      * @return its first three characters
      */
     public String firstThree(String s) {
-        return null;
+        return s.substring(0,3);
     }
 }
