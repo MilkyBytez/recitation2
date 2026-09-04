@@ -38,7 +38,7 @@ public class Formatting {
      * @return the value as text, to four decimal places
      */
     public String fourPlaces(double value) {
-        return null;
+        return String.format("%.4f", value);
     }
 
     /**
