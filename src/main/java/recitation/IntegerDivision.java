@@ -19,7 +19,7 @@ public class IntegerDivision {
      * @return n divided by 2, truncated toward zero
      */
     public int half(int n) {
-        return 0;
+        return n/2;
     }
 
     /**
