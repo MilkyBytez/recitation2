@@ -24,7 +24,8 @@ public class Immutability {
      * @return the same text in upper case
      */
     public String shout(String s) {
-        return null;
+        String shout_this = s.toUpperCase();
+        return shout_this;
     }
 
     /**
