@@ -24,6 +24,9 @@ public class Immutability {
      * @return the same text in upper case
      */
     public String shout(String s) {
+        // Note : I think this solution is correct
+        // new string made called shout_this
+        // s.tUC is held inside shout_this
         String shout_this = s.toUpperCase();
         return shout_this;
     }
@@ -37,6 +40,7 @@ public class Immutability {
      * @return the text without surrounding whitespace
      */
     public String trimmed(String s) {
-        return null;
+        String trim_this = s.trim();
+        return trim_this;
     }
 }
