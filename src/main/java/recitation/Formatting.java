@@ -24,7 +24,9 @@ public class Formatting {
      * @return the value as text, to two decimal places
      */
     public String twoPlaces(double value) {
-        return null;
+        // Notes : String format creates NEW String Object..
+        // %.2f rounds by 2 decimal places and takes in value
+        return String.format("%.2f", value);
     }
 
     /**
